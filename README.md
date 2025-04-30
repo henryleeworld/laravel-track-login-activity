@@ -1,4 +1,4 @@
-# Laravel 7 追蹤登入活動
+# Laravel 11 追蹤登入活動
 
 引入 aginev 的 login-activity 套件來擴增追蹤登入活動，允許在應用程式裡訂閱登入和登出事件，並將資料紀錄到資料庫或日誌檔中。
 
@@ -20,15 +20,23 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
-- 註冊後可以經由 `/login` 來進行登入。
+- 完成註冊後，可以經由 `/login` 來進行登入。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/hYCPLXp.png)
+![](https://i.imgur.com/I3CjkrF.png)
 > 使用註冊的帳號登入
 
-![](https://i.imgur.com/owxCNwZ.png)
+![](https://i.imgur.com/ydhOUcC.png)
 > 資料庫查看使用者的登入紀錄
