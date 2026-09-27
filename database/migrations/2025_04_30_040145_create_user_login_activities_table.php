@@ -12,11 +12,7 @@ return new class extends Migration
     {
         Schema::create('user_login_activities', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')
-			      ->nullable()->default(null)
-                  ->constrained()
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
+            $table->foreignId('user_id')->nullable()->constrained()->onUpdate('cascade')->onDelete('cascade')->default(null);
             $table->string('ip_address', 64);
             $table->string('event', 128);
             $table->boolean('remember')->default(true);
