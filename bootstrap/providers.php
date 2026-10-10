@@ -1,6 +1,9 @@
 <?php
 
+use Aginev\LoginActivity\LoginActivityServiceProvider;
+use App\Providers\AppServiceProvider;
+
 return [
-    Aginev\LoginActivity\LoginActivityServiceProvider::class,
-    App\Providers\AppServiceProvider::class,
+    AppServiceProvider::class,
+    LoginActivityServiceProvider::class,
 ];

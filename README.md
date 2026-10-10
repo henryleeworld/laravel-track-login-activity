@@ -1,4 +1,4 @@
-# Laravel 12 追蹤登入活動
+# Laravel 13 追蹤登入活動
 
 引入 aginev 的 login-activity 套件來擴增追蹤登入活動，允許在應用程式裡訂閱登入和登出事件，並將資料紀錄到資料庫或日誌檔中。
 
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/6LE6h92.png)
+![](https://i.imgur.com/tf2iVsp.png)
 > 使用註冊的帳號登入
 
-![](https://i.imgur.com/mQcIV4E.png)
+![](https://i.imgur.com/hvsrBc3.png)
 > 資料庫查看使用者的登入紀錄
